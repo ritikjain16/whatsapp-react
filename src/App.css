@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Bhai 2";
+  /* font-family: ; */
+  /* font-family: system-ui; */
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Work Sans', sans-serif; */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overscroll-behavior: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+:root {
+  --bs-bg: rgb(235, 244, 235);
+  --mygreen1: #008069;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.innercon {
+  width: 400px;
+  height: 90vh;
+  /* box-shadow: 5px 5px 10px var(--bs-bg), -5px -5px 10px var(--bs-bg); */
+  border-radius: 20px;
+  animation-name: startanim;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  background: white;
+}
+
+.addanim {
+  animation-name: newaddanim;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes newaddanim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.maincon {
+  height: 90vh;
+}
+
+.widthcon {
+  width: 385px;
+}
+
+@media only screen and (max-width: 400px) {
+  .innercon {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .maincon {
+    height: 100vh;
+  }
+  .widthcon {
+    width: 100vw;
+  }
+}
+
+@keyframes startanim {
+  0% {
+    /* opacity: 0; */
+    /* transform: scale(1.3); */
+  }
+  100% {
+    /* opacity: 1; */
+    /* transform: scale(1); */
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot1 {
+  width: 6px;
+  height: 6px;
+  /* background: rgb(221, 210, 210); */
+  border-radius: 50%;
+  animation-name: dot1;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+}
+.dot2 {
+  width: 8px;
+  height: 8px;
+  /* background: rgb(221, 210, 210); */
+  border-radius: 50%;
+  animation-name: dot1;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in-out;
+}
+
+.dot3 {
+  width: 10px;
+  height: 10px;
+  /* background: rgb(221, 210, 210); */
+  border-radius: 50%;
+  animation-name: dot1;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes dot1 {
+  0% {
+    background: rgb(212, 210, 210);
+    transform: scale(1);
+    transform: translateY(0px);
+  }
+  100% {
+    background: var(--mygreen1);
+    transform: scale(1.1);
+    transform: translateY(-5px);
+  }
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.message-sele:hover {
+  color: white;
+  opacity: 1;
+}
+
+.message-sele {
+  cursor: pointer;
+  align-self: flex-end;
+  color: rgb(212, 210, 210);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.message-sele ion-icon {
+  font-size: 20px;
+}
+
+.mytextlink {
+  /* text-decoration: none; */
+  color: #3ab8f7;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.blink {
+  animation: bl 0.4s linear infinite alternate-reverse;
+}
+
+@keyframes bl {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 30px;
+  }
+}

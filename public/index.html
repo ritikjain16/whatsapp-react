@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/w1.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff" />
+  <meta name="msapplication-navbutton-color" content="#fff">
+  <meta name="description" content="WhatsApp-Chat wih friends now easier" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/w1.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>WhatsApp</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      // Register a service worker hosted at the root of the
+      // site using the default scope.
+      navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+        // console.log('Service worker registration succeeded:', registration);
+      }, /*catch*/ function (error) {
+        // console.log('Service worker registration failed:', error);
+      });
+    } else {
+      // console.log('Service workers are not supported.');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
