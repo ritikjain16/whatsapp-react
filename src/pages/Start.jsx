@@ -19,30 +19,30 @@ const Start = () => {
       getuser(navigate);
     }, 2000);
   }, []);
-  const [startcards, setstartcards] = useState([]);
+  // const [startcards, setstartcards] = useState([]);
 
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setstartcards((prev) => [...prev, 1]);
-    }, 150);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setstartcards((prev) => [...prev, 1]);
+  //   }, 150);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
   return (
     <Pagecon style={{ position: "relative" }}>
-      {/* <div className="flexc" style={{ height: "80vh" }}>
+      <div className="flexc" style={{ height: "80vh" }}>
         <img src={wimg} alt="" style={{ width: "200px" }} />
         <Whatsappname>WhatsApp</Whatsappname>
         <Loading />
-      </div> */}
+      </div>
       {/* <div style={{ position: "absolute", top: "50%", left: "20%" }}>
         <h1>Choose the color</h1>
       </div> */}
 
-      <div
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -72,7 +72,7 @@ const Start = () => {
             </MyDiv>
           </div>
         ))}
-      </div>
+      </div> */}
     </Pagecon>
   );
 };
