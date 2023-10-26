@@ -18,7 +18,7 @@ const socket = io(BACKEND_URL);
 const song4 = new Audio(so4);
 const initialState = {
   newtheme: {
-    mygreen: "#f25022",
+    mygreen: "#209620",
     graycolor: "rgb(212, 210, 210)",
     textcolor: "white",
     buttonbg: "white",
