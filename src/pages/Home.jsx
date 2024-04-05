@@ -55,7 +55,7 @@ const Home = () => {
             position: "fixed",
             // display: "flex",
             // alignItems: "center",
-            top: window.innerWidth > 400 ? "32px" : "",
+            top: window.innerWidth > 400 ? "28px" : "",
             borderRadius: window.innerWidth > 400 ? "20px" : "",
             borderBottomLeftRadius: window.innerWidth > 400 ? "0px" : "",
             borderBottomRightRadius: window.innerWidth > 400 ? "0px" : "",
